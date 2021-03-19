@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:latest
 
 LABEL maintainer="cncf-falco-dev@lists.cncf.io"
 
