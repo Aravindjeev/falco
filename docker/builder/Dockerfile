@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:latest
 
 LABEL name="falcosecurity/falco-builder"
 LABEL usage="docker run -v $PWD/..:/source -v $PWD/build:/build falcosecurity/falco-builder cmake"
