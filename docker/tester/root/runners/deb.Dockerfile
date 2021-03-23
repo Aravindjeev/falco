@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:cosmic
 LABEL maintainer="cncf-falco-dev@lists.cncf.io"
 
 ARG FALCO_VERSION=
