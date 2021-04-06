@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:cosmic
 
 LABEL maintainer="cncf-falco-dev@lists.cncf.io"
 
