@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM ubuntu:bionic
 
 LABEL maintainer="cncf-falco-dev@lists.cncf.io"
 
@@ -45,12 +45,12 @@ RUN curl -L -o cpp-6_6.3.0-18_amd64.deb https://download.falco.org/dependencies/
 	&& curl -L -o gcc-6-base_6.3.0-18_amd64.deb https://download.falco.org/dependencies/gcc-6-base_6.3.0-18_amd64.deb \
 	&& curl -L -o gcc-6_6.3.0-18_amd64.deb https://download.falco.org/dependencies/gcc-6_6.3.0-18_amd64.deb \
 	&& curl -L -o libasan3_6.3.0-18_amd64.deb https://download.falco.org/dependencies/libasan3_6.3.0-18_amd64.deb \
-	&& curl -L -o libcilkrts5_6.3.0-18_amd64.deb https://download.falco.org/dependencies/libcilkrts5_6.3.0-18_amd64.deb \
+	&& curl -L -o libcilkrts5_7.5.0-3ubuntu1~18.04_amd64.deb http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/libcilkrts5_7.5.0-3ubuntu1~18.04_amd64.deb \
 	&& curl -L -o libgcc-6-dev_6.3.0-18_amd64.deb https://download.falco.org/dependencies/libgcc-6-dev_6.3.0-18_amd64.deb \
-	&& curl -L -o libubsan0_6.3.0-18_amd64.deb https://download.falco.org/dependencies/libubsan0_6.3.0-18_amd64.deb \
+	&& curl -L -o libubsan0_7.5.0-3ubuntu1~18.04_amd64.deb http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/libubsan0_7.5.0-3ubuntu1~18.04_amd64.deb \
 	&& curl -L -o libmpfr4_3.1.3-2_amd64.deb https://download.falco.org/dependencies/libmpfr4_3.1.3-2_amd64.deb \
 	&& curl -L -o libisl15_0.18-1_amd64.deb https://download.falco.org/dependencies/libisl15_0.18-1_amd64.deb \
-	&& dpkg -i cpp-6_6.3.0-18_amd64.deb gcc-6-base_6.3.0-18_amd64.deb gcc-6_6.3.0-18_amd64.deb libasan3_6.3.0-18_amd64.deb libcilkrts5_6.3.0-18_amd64.deb libgcc-6-dev_6.3.0-18_amd64.deb libubsan0_6.3.0-18_amd64.deb libmpfr4_3.1.3-2_amd64.deb libisl15_0.18-1_amd64.deb \
+	&& dpkg -i cpp-6_6.3.0-18_amd64.deb gcc-6-base_6.3.0-18_amd64.deb gcc-6_6.3.0-18_amd64.deb libasan3_6.3.0-18_amd64.deb libcilkrts5_7.5.0-3ubuntu1~18.04_amd64.deb libgcc-6-dev_6.3.0-18_amd64.deb libubsan0_7.5.0-3ubuntu1~18.04_amd64.deb libmpfr4_3.1.3-2_amd64.deb libisl15_0.18-1_amd64.deb \
 	&& rm -f cpp-6_6.3.0-18_amd64.deb gcc-6-base_6.3.0-18_amd64.deb gcc-6_6.3.0-18_amd64.deb libasan3_6.3.0-18_amd64.deb libcilkrts5_6.3.0-18_amd64.deb libgcc-6-dev_6.3.0-18_amd64.deb libubsan0_6.3.0-18_amd64.deb libmpfr4_3.1.3-2_amd64.deb libisl15_0.18-1_amd64.deb
 
 # gcc 5 is no longer included in debian stable, but we need it to
