@@ -1,4 +1,4 @@
-FROM ubuntu:cosmic
+FROM ubuntu:rolling
 
 LABEL maintainer="cncf-falco-dev@lists.cncf.io"
 
