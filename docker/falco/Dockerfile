@@ -1,4 +1,4 @@
-FROM ubuntu:rolling
+FROM ubuntu:22.10
 
 LABEL maintainer="cncf-falco-dev@lists.cncf.io"
 
