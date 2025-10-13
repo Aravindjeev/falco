@@ -1,4 +1,4 @@
-FROM ubuntu:rolling
+FROM ubuntu:questing-20250830
 
 LABEL maintainer="cncf-falco-dev@lists.cncf.io"
 
